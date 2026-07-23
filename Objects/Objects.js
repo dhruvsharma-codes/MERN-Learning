@@ -173,3 +173,27 @@
 // clone.Address.city = "Delhi";
 // console.log(user.Address.city);
 // console.log(clone.Address.city);
+
+
+
+
+
+
+// let user = {
+//     "name" : "Dhruv",
+//     "age" : 21,
+//     "Address" : {
+//         "city" : "Mohali",
+//     }
+// }
+// console.log(user);
+
+// let clone = structuredClone(user);
+
+// clone.Address.city = "Delhi";
+// console.log(user.Address.city);
+// console.log(clone.Address.city);
+
+
+// let obj = {};
+// alert(obj.valueOf() === obj);
