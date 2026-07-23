@@ -37,16 +37,16 @@
 
 
 
-// let id = Symbol("id");
-// let user ={
-//     "name" : "Dhruv",
-//     "age" : 21,
-//     [id] : 123,
-// }
-// console.log(user);
+let id = Symbol("id");
+let user ={
+    "name" : "Dhruv",
+    "age" : 21,
+    [id] : 123,
+}
+console.log(user);
 
-// let clone = Object.assign({},user);
-// console.log(clone);
-// console.log(clone[id]);
-// console.log(user[id] === clone[id]);
-// console.log(user === clone);
+let clone = Object.assign({},user);
+console.log(clone);
+console.log(clone[id]);
+console.log(user[id] === clone[id]);
+console.log(user === clone);
