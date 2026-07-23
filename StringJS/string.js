@@ -1,4 +1,4 @@
-// strings are used for sorting text, strings are immutable
+// strings are used for sorting text, strings are immutable.
 
 // let str = "dhruv";
 // console.log(str);
@@ -11,14 +11,15 @@
 // console.log(text);
 
 
+
 // template lateral
 // let name = "Dhruv";
 // console.log(`Hello, ${name}`);
 
 
 
-
 // string methods
+
 
 
 // finding length
@@ -94,6 +95,7 @@
 // console.log(text.split(""));
 // console.log(text.split(" "));
 // console.log(text.split(","));
+
 
 
 // searching method 
