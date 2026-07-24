@@ -13,22 +13,22 @@
 
 
 
-let timer;
+// let timer;
 
-function startClock(){
-    if(!timer){
-        timer = setInterval(showTimer,1000);
-    }
-}
+// function startClock(){
+//     if(!timer){
+//         timer = setInterval(showTimer,1000);
+//     }
+// }
 
-function showTimer(){
+// function showTimer(){
 
-    const date = new Date();
-    document.getElementById("demo").innerHTML = date.toLocaleTimeString();
-}
+//     const date = new Date();
+//     document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+// }
 
-function stopClock(){
-clearInterval(timer);
-timer = undefined;
-}
+// function stopClock(){
+// clearInterval(timer);
+// timer = undefined;
+// }
 
