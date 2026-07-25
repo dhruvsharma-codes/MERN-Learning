@@ -111,6 +111,58 @@ Engines are complicated. But the basics are easy.
 /* DATATYPES
 
 * A value in JavaScript is always of a certain type. For example, a string or a number.
-
+* Programming languages that allow such things, such as JavaScript, are called “dynamically typed”, meaning that there exist data types, but variables are not bound to any of them.
+* there are two types of datatypes primitive and non primitive.
 
 */
+/*  PRIMITIVE DATATYPE */
+// Number represents both int and float
+// let n = 12;
+// console.log(typeof n);
+// let n1 = 12.324;
+// console.log(typeof n1);
+
+// Bignint represents big numbers
+// let n = 1234747374784n;
+// console.log(typeof n);
+
+// string is sequence of characetr surrouned by quotes, we can write string in three ways double quotes, single and backtips expression with template lateral
+// let str = "dhruv";
+// console.log(typeof str);
+// let str1 = 'dhruv';
+// console.log(typeof str1);
+// let str3 = "dhruv";
+// console.log(`hi ${str3}`, typeof str3);
+
+// Boolean type has only two values: true and false.
+// let isMonday = true;
+// console.log(typeof isMonday);
+// let age = 6 > 10;
+// console.log(age, typeof age);
+
+// Null means empty value
+// let name1 = null;
+// console.log(name1, typeof name1);
+
+// Undefined means If a variable is declared, but not assigned, then its value is undefined
+// let n;
+// console.log(n, typeof n);
+
+// symbol is a unique identifier
+// let sym = Symbol("id");
+// console.log(typeof sym);
+
+
+/*  NON-PRIMITIVE DATATYPE */
+// object is a key value pair.
+// let obj = {
+//     "name" : "dhruv",
+//     "age" : 21,
+// }
+// console.log(obj,typeof obj);
+
+// function is a reusable block of code 
+// function show(){
+//     console.log("function");
+// }
+// show();
