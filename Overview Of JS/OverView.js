@@ -26,3 +26,18 @@ Engines are complicated. But the basics are easy.
 * Supported by all major browsers and enabled by default.
 
  */
+
+
+
+// JS FUNDAMENTALS
+
+/* BASIC CODE SYNTAX
+
+* This is the core javascript code it runs in browser console.
+* we can write js script using two ways firstly in html page using script tag or create an external js file and attach it with html page.
+* I have given example of both external and internal js.
+* external js has high priority or we can say specificity then inetrnal js.
+
+*/
+// console.log("Hello World");
+// alert("I am External JavaScript");
