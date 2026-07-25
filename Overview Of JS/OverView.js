@@ -58,3 +58,59 @@ Engines are complicated. But the basics are easy.
 // x = 12;
 // console.log(x);
 
+
+
+/* VARIABLES
+
+* A variable is a “named storage” for data. 
+* we can declare a variable in three ways using var,let or const, basically var is old way in modern js we mostly use const or let.
+* Case sensitive Variables named apple and APPLE are two different variables.
+* let can reassign a value but not redeclare and const cannot do both.
+* we can copy one variable value to another using assignment operator.
+* var is function scoped and let and const is blocked scope.
+
+*/
+// this is reassignment
+// let a = 10;
+// console.log(a);
+// a = 20; 
+// console.log(a);
+
+// this is not reassigned or redecalre
+// const a = 10;
+// console.log(a);
+// a = 20; 
+// console.log(a);
+
+// copy using assignment operator
+// let a = 10;
+// let c;
+// console.log("value of a:-", a);
+// c = a;
+// console.log("value of c:-", c);
+// console.log(a == c);
+
+// blocked scope not accessed outside the block gives reference error
+// {
+//     let a = 10;
+//     console.log(a);
+// }
+// console.log(a);
+
+// function scoped accessed anywhere in function but not outside function also gives reference error
+// function show(){
+//     var a = 12;
+//     console.log(a);
+// }
+// show();
+//     console.log(a);
+
+
+
+
+/* DATATYPES
+
+* A value in JavaScript is always of a certain type. For example, a string or a number.
+
+
+*/
