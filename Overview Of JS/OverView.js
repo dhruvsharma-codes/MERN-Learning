@@ -41,3 +41,20 @@ Engines are complicated. But the basics are easy.
 */
 // console.log("Hello World");
 // alert("I am External JavaScript");
+
+
+/* USE STRICT
+
+* "use strict" is a special directive in JavaScript that enables Strict Mode. Strict Mode makes JavaScript more secure by catching common mistakes and preventing unsafe actions.
+* in modern js by if we use classes or modules in our code use strict is enabled automatically we didn't need to write anything.
+* use strict helps to find errors easily.
+*/
+// this code simply runs without giving any error
+// x = 12;
+// console.log(x);
+
+// by using use strict it makes our code secure by giving reference error because we didn't use let , var or const to define x.
+// "use strict"
+// x = 12;
+// console.log(x);
+
