@@ -35,8 +35,8 @@
 // console.log(text.charCodeAt(3));
 
 // gives point value at position
-// let text = "Hello";
-// console.log(text.codePointAt(2));
+// let text2 = "Hello";
+// console.log(text2.codePointAt(2));
 
 // at gives character at index value that we point
 // let text = "Hello";
@@ -136,4 +136,5 @@
 // ends with specific string
 // let text = "Hello world, welcome to the universe";
 // console.log(text.endsWith("universe"));
+
 

@@ -34,7 +34,7 @@
 // let d = new Date();
 // console.log(d);
 
-let d1 = new Date();
+// let d1 = new Date();
 // d1.setDate(26);
 // console.log(d1);
 // console.log(d1.getDate());
@@ -44,3 +44,8 @@ let d1 = new Date();
 // console.log(d1.getUTCDate());
 
 // console.log(d1.getUTCFullYear());
+
+
+
+// console.log(Number.EPSILON); 
+// Output: 2.220446049250313e-16
