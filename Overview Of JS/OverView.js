@@ -421,3 +421,37 @@ Engines are complicated. But the basics are easy.
 // let lastName = null;
 // let nickName = "Supercoder";
 // alert(firstName ?? lastName ?? nickName ?? "Anonymous");
+
+
+
+/* LOOPS
+
+* loops are used for repetitive tasks.
+ 
+*/
+// while return truthy value
+// let i = 0;
+// while(i<5){
+//     console.log(i);
+//     i++;
+// }
+
+
+// do while first execute the body, then check the condition, and, while it’s truthy, execute it again and again.
+// let i = 0;
+// do{
+//     console.log(i);
+//     i++;
+// }
+// while(i<5);
+
+
+// The for loop is more complex, but it’s also the most commonly used loop.its a shorthand
+// for(let i = 0; i < 5; i++){
+//     console.log(i);
+// }
+
+// for(let i = 0; i < 10; i++){
+//     if(i % 2 == 0) continue;
+//     alert(i);
+// }
