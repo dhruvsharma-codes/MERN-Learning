@@ -1,3 +1,5 @@
+"use strict";
+
 /* INTRO OF JS
 
 * JavaScript was initially created to “make web pages alive”. 
@@ -186,3 +188,45 @@ Engines are complicated. But the basics are easy.
 
 // let name = prompt("Enter your name:","");
 // alert(`Hi, I am ${name}`);
+
+
+
+/* TYPE CONVERSION
+
+* Most of the time, operators and functions automatically convert the values given to them to the right type.
+* For example, alert automatically converts any value to a string to show it. Mathematical operations convert values to numbers.
+
+*/
+/* String Conversion*/
+// let age = 12;
+// console.log(typeof age);
+// value = String(age);
+// console.log(typeof value);
+
+// let value = true;
+// console.log(typeof value);
+// value = String(value);
+// console.log(typeof value);
+
+
+/* Number Conversion*/
+// let a = "123";
+// console.log(typeof a);
+// a = Number(a);
+// console.log(typeof a);
+
+
+// let age = Number("an arbitrary string instead of a number");
+// console.log(age);
+
+// alert(Number("123"));
+// alert(Number("12sd3"));
+// alert(Number(true));
+// alert(Number(false));
+
+
+/* Boolean Conversion*/
+// alert(Boolean(1));
+// alert(Boolean(0));
+// alert(Boolean("Hello"));
+// alert(Boolean(""));
