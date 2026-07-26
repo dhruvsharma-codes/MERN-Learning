@@ -569,18 +569,34 @@ Engines are complicated. But the basics are easy.
 // let result = sum(1,2);
 // alert(result);
 
-function checkAge(age){
-    if(age>=18){
-        return true;
-    }
-    else{
-        confirm("Do you have permission with your parents?");
-    }
-}
-let age = prompt("How old are you",18);
-if(checkAge(age)){
-    alert("Acess Granted");
-}
-else{
-    alert("Access Denied");
-}
+// function checkAge(age){
+//     if(age>=18){
+//         return true;
+//     }
+//     else{
+//         confirm("Do you have permission with your parents?");
+//     }
+// }
+// let age = prompt("How old are you",18);
+// if(checkAge(age)){
+//     alert("Acess Granted");
+// }
+// else{
+//     alert("Access Denied");
+// }
+
+
+/* ARROW FUNCTION
+
+* simple and consise syntax.
+
+*/
+// let sum = (a,b)=> a+b;
+// alert(sum(12,22));
+
+// let sum = (a,b)=>{
+//     let result = a + b;
+//     return result;
+// }
+// alert(sum(12,12));
+
