@@ -382,3 +382,42 @@ Engines are complicated. But the basics are easy.
 // else{
 //     alert("Wrong!");
 // }
+
+
+/* NULLISH OPERATOR
+
+* The nullish coalescing operator is written as two question marks ??.
+* As it treats null and undefined similarly, we’ll use a special term here, in this article. For brevity, we’ll say that a value is “defined” when it’s neither null nor undefined.
+* || returns the first truthy value.
+* ?? returns the first defined value.
+
+*/
+// let user;
+// console.log(user ?? "Dhruv");
+
+// let user = "John";
+// console.log(user ?? "Dhruv");
+
+// let user = null;
+// console.log(user ?? "John");
+
+// let user1;
+// let user2;
+// console.log(user1 ?? user2);
+
+// let user1 = null;
+// let user2 = null;
+// console.log(user1 ?? user2);
+
+// let user1 = null;
+// let user2;
+// console.log(user1 ?? user2);
+
+// let user1;
+// let user2 = null;
+// console.log(user1 ?? user2);
+
+// let firstName = null;
+// let lastName = null;
+// let nickName = "Supercoder";
+// alert(firstName ?? lastName ?? nickName ?? "Anonymous");
