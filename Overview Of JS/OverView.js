@@ -166,3 +166,23 @@ Engines are complicated. But the basics are easy.
 //     console.log("function");
 // }
 // show();
+
+
+
+/* INTERACTION :- ALERT,PROMPT,CONFIRM
+
+* Alert:- It shows a message and waits for the user to press “OK”.
+* Prompt:- The function prompt accepts two arguments,It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
+* The function confirm shows a modal window with a question and two buttons: OK and Cancel.
+
+*/
+// alert("Hello I am JS.");
+
+// let age = prompt("How old are you",10);
+// alert(`You are ${age} years old.`);
+
+// let isBoss = confirm("Are you the Boss.");
+// alert(isBoss);
+
+// let name = prompt("Enter your name:","");
+// alert(`Hi, I am ${name}`);
