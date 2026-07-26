@@ -230,3 +230,155 @@ Engines are complicated. But the basics are easy.
 // alert(Boolean(0));
 // alert(Boolean("Hello"));
 // alert(Boolean(""));
+
+
+
+/* OPERATORS
+
+* operators are used to perform specific tasks like doing canculations, comparing values , assigning value or so on.
+* operators has various types arithmetic operators, comparison operators, logical operators and assignment operators.
+
+*/
+/*Arithmetic Operators */
+
+// addition
+// let a = 10;
+// let b = 20;
+// console.log(a+b);
+
+// substraction
+// let a = 20;
+// let b = 5;
+// console.log(a-b);
+
+// multiplying
+// let a = 20;
+// let b = 5;
+// console.log(a*b);
+
+// division
+// let a = 20;
+// let b = 5;
+// console.log(a/b);
+
+// modulus
+// let a = 20;
+// let b = 5;
+// let c = 15;
+// console.log(a%b);
+// console.log(a%c);
+// console.log(c%b);
+
+// increment
+// let a = 12;
+// post increment
+// a++;
+// console.log(a);
+// pre increment
+// console.log(++a);
+
+// decrement
+// let a = 12;
+// post decrement
+// a--;
+// console.log(a);
+// pre decrement
+// console.log(--a);
+
+// exponiation
+// let x = 5;
+// console.log(x**2);
+
+
+/*Assignment Operators */
+// =
+// let x = 5;
+// console.log(x);
+// let y = x;
+// console.log(y);
+
+// +=
+// let x = 12;
+// x+=5;
+// console.log(x);
+
+// let y = 12;
+// let x = 10;
+// x+=y;
+// console.log(x);
+
+
+/*Assignment Operators */
+// ==
+// console.log(12 == 12);
+// console.log(12 == "12");
+// console.log(12 == "42");
+
+// ===
+// console.log(12 === 12);
+// console.log(12 === "12");
+// console.log(12 === "42");
+
+// =!
+// console.log(12 != 12);
+// console.log(12 != "12");
+// console.log(12 != "42");
+
+// ==!
+// console.log(12 !== 12);
+// console.log(12 !== "12");
+// console.log(12 !== "42");
+
+// >
+// console.log(12>22);
+// console.log(43>22);
+
+// <
+// console.log(12<22);
+// console.log(43<22);
+
+
+/*Logical Operators */
+// or(||)
+// let a = 10;
+// let b = 20;
+// console.log((a > b) || (b > a));
+
+// and(&&)
+// let a = 10;
+// let b = 20;
+// console.log((a > b) && (b > a));
+
+// not(!)
+// let a = 10;
+// let b = 20;
+// console.log(!(a > b) && (b > a));
+
+
+/*
+
+* The if(...) statement evaluates a condition in parentheses and, if the result is true, executes a block of code and else if not true executed.
+
+*/
+// let age = 22;
+// if(age>18){
+//     console.log("You can vote");
+// }
+
+
+// let age = 12;
+// if(age>18){
+//     console.log("You can vote");
+// }
+// else{
+//     console.log("You cannot vote");
+// }
+
+
+// let company = prompt("Which company created javascript");
+// if(company == "netscape"){
+//     alert("Right");
+// }
+// else{
+//     alert("Wrong!");
+// }
