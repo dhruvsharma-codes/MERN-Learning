@@ -455,3 +455,132 @@ Engines are complicated. But the basics are easy.
 //     if(i % 2 == 0) continue;
 //     alert(i);
 // }
+
+
+/* SWITCH
+
+* A switch statement can replace multiple if checks.
+* It gives a more descriptive way to compare a value with multiple variants.
+
+*/
+// let a = 2 + 2;
+// switch(a){
+//     case 1:
+//         console.log("Not need")
+//         break;
+//     case 2:
+//         console.log("You are near");
+//         break;
+//     case 3:
+//         console.log("To small");
+//         break;
+//     case 4:
+//         console.log("Exactly");
+//         break;
+//     case 5:
+//         console.log("To big");
+//         break;
+//     default:
+//         console.log( "I don't know such values" );                    
+// }
+
+// let day = 2;
+// switch(day){
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     case 4:
+//         console.log("Thursday");
+//         break;
+//     case 5:
+//         console.log("Friday");
+//         break;
+//     case 6:
+//         console.log("Saturday");
+//         break;
+//     default:
+//         console.log("I don't know.");  
+// }
+
+
+/* FUNCTION
+
+* function is a reusable block of code.
+
+*/
+// this is function declaration
+// function showMessage(){
+//     console.log("Hi");
+// }
+// showMessage();
+// showMessage();
+// showMessage();
+
+// function showMessage(){
+//     let message = "Hello I am JavaScript";
+//     console.log(message);
+// }
+// showMessage();
+// this shows function works in block and not accessed outside block
+// console.log(message);
+
+// let name = "dhruv";
+// function showName(){
+//     let message = "Hello, " + name;
+//     alert(message);
+// }
+// showName();
+
+// let name = "John";
+// function showUser(){
+//     let userName = "Dhruv";
+//     let message = "hello" + userName;
+//     alert(message);
+// }
+// showUser();
+// alert(name);
+
+
+/* Function with Parameters */
+// simple parameter function
+// function ShowMessage(from,text){
+//     alert(from + ":" + text);
+// }
+// ShowMessage("John","Hello I am JS.");
+
+// if we didnt give argument and we get undefined value
+// function show(text){
+// if(text === undefined){
+//     text = "empty message";
+//     alert(text);
+// }
+// }
+// show();
+
+// function sum(a,b){
+//     return a+b;
+// }
+// let result = sum(1,2);
+// alert(result);
+
+function checkAge(age){
+    if(age>=18){
+        return true;
+    }
+    else{
+        confirm("Do you have permission with your parents?");
+    }
+}
+let age = prompt("How old are you",18);
+if(checkAge(age)){
+    alert("Acess Granted");
+}
+else{
+    alert("Access Denied");
+}
