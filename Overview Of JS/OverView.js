@@ -881,3 +881,142 @@ Engines are complicated. But the basics are easy.
 // console.log(Number.isNaN(123));
 // console.log(Number.isNaN("123"));
 // console.log(Number.isNaN(NaN));
+
+
+
+/* Strings
+
+* In JavaScript, the textual data is stored as strings.
+
+*/
+// let str1 = 'single-quote';
+// console.log(str1);
+// let str2 = "double-quote";
+// console.log(str2);
+// let str3 = `backtick`;
+// console.log(str3);
+
+
+// template lateral for dynamic data
+// function sum(a,b){
+//     return a+b;
+// }
+// alert(`1 + 2 = ${sum(1,2)}`);
+
+
+
+/* String methods */
+// length
+// let text = "rtyuihcbdns";
+// console.log(text.length);
+
+// char at index
+// let text = "rtyuihcbdns";
+// console.log(text[3]);
+
+// at
+// let text = "rtyuihcbdns";
+// console.log(text.at(2));
+
+// charat
+// let text = "rtyuihcbdns";
+// console.log(text.charAt(5));
+
+// charcodeat
+// let text = "artyuihcbdns";
+// console.log(text.charCodeAt(5));
+
+// codepointat
+// let text = "rtyuihcbdns";
+// console.log(text.codePointAt(0));
+
+// concat
+// let text1 = "dhruv";
+// let text2 = "sharma";
+// console.log(text1.concat(" ",text2))
+
+// slice
+// let text = "rtyuihcbdns";
+// console.log(text.slice(0,5));
+// console.log(text.slice(5));
+// console.log(text.slice(-5));
+// console.log(text.slice(-8,-2));
+
+// substr
+// let text = "rtyuihcbdns";
+// console.log(text.substring(0,4));
+// console.log(text.substring(4));
+// console.log(text.substring(-4));
+
+// touppercase, tolowercase
+// let text = "rtyuihcbdns";
+// console.log(text.toUpperCase());
+// let text2 = "TFGVBNNWWW";
+// console.log(text2.toLowerCase());
+
+// trim,trimstart,trimend
+// let text1 = "   text      ";
+// console.log(text1);
+// console.log(text1.trim());
+// let text2 = "   text      ";
+// console.log(text2);
+// console.log(text2.trimStart());
+// let text3 = "      text          ";
+// console.log(text3);
+// console.log(text3.trimEnd());
+
+// padend,padstart
+// let text1 = "5";
+// console.log(text1);
+// console.log(text1.padStart(4,"-"));
+// let text2 = "5";
+// console.log(text2);
+// console.log(text2.padEnd(4,"-"));
+
+// repeat
+// let text = "hello";
+// console.log(text);
+// console.log(text.repeat(3));
+
+// replace,replaceall
+// let text = "hello I am c++ c++";
+// console.log(text);
+// console.log(text.replace("c++","Js"));
+// let text = "hello I am c++ c++";
+// console.log(text);
+// console.log(text.replaceAll("c++","Js"));
+
+// split:- string to array
+// let text = "hello I am c++ c++";
+// console.log(text);
+// console.log(text.split());
+
+// indexof,lastindexof
+// let text = "Please locate where locate occurs!";
+// let index = text.indexOf("locate");
+// console.log(index);
+// let text = "Please locate where locate occurs!";
+// let lastindex = text.lastIndexOf("locate");
+// console.log(lastindex);
+
+// search
+// let text = "Please locate where 'locate' occurs!";
+// let search = text.search("locate");
+// console.log(search);
+
+// match,matchall
+// let text1 = "The rain in SPAIN stays mainly in the plain";
+// console.log(text1.match("ain"));
+// let text2 = "The rain in SPAIN stays mainly in the plain";
+// let match = text2.matchAll("ain");
+// console.log(match);
+
+// includes
+// let text = "Hello world, welcome to the universe.";
+// console.log(text.includes("world"));
+
+// startwith,endwith
+// let text = "Hello world, welcome to the universe.";
+// console.log(text.startsWith("Hello"));
+// let text2 = "Hello world, welcome to the universe.";
+// console.log(text2.endsWith("Hello"));
