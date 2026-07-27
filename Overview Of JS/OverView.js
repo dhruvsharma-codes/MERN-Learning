@@ -677,3 +677,37 @@ Engines are complicated. But the basics are easy.
 
 
 
+/* Object using this keyword 
+
+* Here during the execution of user.sayHi(), the value of this will be user.
+* Technically, it’s also possible to access the object without this, by referencing it via the outer variable:…But such code is unreliable. If we decide to copy user to another variable, e.g. admin = user and overwrite user with something else, then it will access the wrong object.
+
+*/
+// let user = {
+//     "name" : "dhruv",
+//     "age" : 21,
+
+    // this is a method
+//     sayHi(){
+//         console.log(this.name);
+//     }
+// }
+// user.sayHi();
+
+
+// The rule is simple: if obj.f() is called, then this is obj during the call of f. So it’s either user or admin in the example above.
+// let user = {
+//     "name" : "dhruv"
+// }
+// let admin = {
+//     "name" : "admin"
+// }
+// function sayHi(){
+//     console.log(this.name);
+// }
+
+// user.f = sayHi;
+// admin.f = sayHi;
+
+// user.f();
+// admin.f();
