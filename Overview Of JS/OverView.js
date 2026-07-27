@@ -1,5 +1,6 @@
 "use strict";
 
+
 /* INTRO OF JS
 
 * JavaScript was initially created to “make web pages alive”. 
@@ -599,4 +600,80 @@ Engines are complicated. But the basics are easy.
 //     return result;
 // }
 // alert(sum(12,12));
+
+
+
+/* OBJECTS
+
+* an object ia a key value pair.
+* there are two ways to write object using object constructor eg: let obj = new object(); or using object literal eg: let obj = {};
+
+*/
+// let obj = {
+//     "name" : "Dhruv",
+//     "age" : 21,
+// }
+// console.log(obj);
+// console.log(obj.name);
+// console.log(obj.age);
+
+// if we want to add
+// obj.isAdmin = true;
+// console.log(obj);
+
+
+// let user = {
+//     "name" : "dhruv",
+//     "age" : 21,
+//     "gender" : "male",
+// }
+// console.log(user);
+// for(let key in user){
+//     console.log(key);
+
+    // values
+    // console.log(user[key])
+// }
+
+
+/* Object cloning */
+// if we copy object like this then we have same refernce if we delte admin user is also deleted.
+// let user = {
+//     "name" : "dhruv",
+//     "age" : 21,
+// }
+// console.log(user);
+// let admin = user;
+// console.log(admin);
+
+
+// now we use different mwthod to clone; this create two different references
+// let user = {
+//     "name" : "dhruv",
+//     "age" : 21,
+// }
+// let clone = {};
+// for(let key in user){
+//     clone[key] = user[key];
+// }
+// console.log(clone);
+// clone.name = "peter";
+// console.log(clone);
+// console.log(user);
+
+
+// we can also use object assign to assign 
+// let user = { name: "John" };
+
+// let permissions1 = { canView: true };
+// let permissions2 = { canEdit: true };
+
+// Object.assign(user, permissions1, permissions2);
+
+// console.log(user);
+// alert(user.name); 
+// alert(user.canView); 
+// alert(user.canEdit); 
+
+
 
