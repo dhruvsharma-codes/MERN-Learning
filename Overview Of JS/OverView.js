@@ -1,6 +1,7 @@
 "use strict";
 
 
+
 /* INTRO OF JS
 
 * JavaScript was initially created to “make web pages alive”. 
@@ -728,3 +729,71 @@ Engines are complicated. But the basics are easy.
 // let user2 = new User("John",21);
 // console.log(user1);
 // console.log(user2);
+
+
+
+/* SYMBOL
+
+* A “symbol” represents a unique identifier.
+* A value of this type can be created using Symbol().
+* symbols are not converted to string if we using alert.
+
+*/
+// let id = Symbol();
+// console.log(id);
+// console.log(typeof id);
+
+// id is a symbol with description id.
+// let id = Symbol("id");
+// console.log(id);
+
+// treat different if id description is also same is also same.
+// let id1 = Symbol("id");
+// let id2 = Symbol("id");
+// console.log(id1 == id2);
+
+
+// let id = Symbol("id");
+// alert(id.toString());
+
+// symbol accessing
+// let user = {
+//     "name" : "dhruv",
+//     "age" : 21,
+// }
+// let id = Symbol("id");
+// user[id] = 1;
+
+// console.log(user);
+// we cannot access id like this
+// console.log(user.id);
+
+// we have to use square brackets
+// console.log(user[id]);
+
+
+// for in loop cannot show key symbol.
+// let id = Symbol("id");
+// let user = {
+//   name: "John",
+//   age: 30,
+//   [id]: 123
+// };
+// for (let key in user) alert(key);
+
+// we can access directly
+// alert("Direct : " + user[id]);
+
+
+
+// let id = Symbol("id");
+// let user = {
+//   [id]: 123
+// };
+// let clone = Object.assign({},user);
+// console.log(clone[id]);
+// console.log(user[id]);
+// console.log(user[id] == clone[id]);
+// console.log(user == clone);
+
+
