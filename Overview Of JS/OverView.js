@@ -797,3 +797,87 @@ Engines are complicated. But the basics are easy.
 // console.log(user == clone);
 
 
+
+/* NUMBERS
+
+* javascript has only two types of number integer,float.
+
+*/
+/* Methods */
+
+// tostring:- convert number to string
+// let num = 123;
+// console.log(typeof num);
+// let str = num.toString();
+// console.log(typeof str);
+// console.log(num === str);
+
+
+// toexponential:- return string and add exponential value.
+// let num = 9.566;
+// console.log(num.toExponential());
+// console.log(num.toExponential(2));
+// console.log(num.toExponential(4));
+
+
+// tofixed:- return string with specific number of decimal.
+// let x = 9.656;
+// console.log(x.toFixed(0));
+// console.log(x.toFixed(2));
+// console.log(x.toFixed(4));
+// console.log(x.toFixed(6));
+
+
+// toprecision:- return string with a number with specified length.
+// let x = 9.656;
+// console.log(x.toPrecision());
+// console.log(x.toPrecision(2));
+// console.log(x.toPrecision(4));
+// console.log(x.toPrecision(6));
+
+
+// Number method:- to covert variable to number.
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number("10"));
+// console.log(Number("  10"));
+// console.log(Number("10  "));
+// console.log(Number(" 10  "));
+// console.log(Number("10.33"));
+// console.log(Number("10,33"));
+// console.log(Number("10 33"));
+// console.log(Number("John"));
+
+
+// parseInt return a whole number with no decimal and first number.
+// console.log(parseInt("-10"));
+// console.log(parseInt("-10.33"));
+// console.log(parseInt("10"));
+// console.log(parseInt("10.33"));
+// console.log(parseInt("10 20 30"));
+// console.log(parseInt("10 years"));
+// console.log(parseInt("years 10"));
+
+
+// parse float return a number.
+// console.log(parseFloat("10"));
+// console.log(parseFloat("10.33"));
+// console.log(parseFloat("10 20 30"));
+// console.log(parseFloat("10 years"));
+// console.log(parseFloat("years 10"));
+
+
+// isInteger returns true if argument is integer
+// console.log(Number.isInteger(10));
+// console.log(Number.isInteger(10.5));
+
+
+// isfinite return true if value is finite
+// console.log(Number.isFinite(123));
+// console.log(Number.isFinite(Infinity));
+
+
+// The Number.isNaN() method returns true if the argument is NaN (Not a Number).
+// console.log(Number.isNaN(123));
+// console.log(Number.isNaN("123"));
+// console.log(Number.isNaN(NaN));
