@@ -677,7 +677,7 @@ Engines are complicated. But the basics are easy.
 
 
 
-/* Object using this keyword 
+/* OBJECT USING THIS KEYWORD
 
 * Here during the execution of user.sayHi(), the value of this will be user.
 * Technically, it’s also possible to access the object without this, by referencing it via the outer variable:…But such code is unreliable. If we decide to copy user to another variable, e.g. admin = user and overwrite user with something else, then it will access the wrong object.
@@ -711,3 +711,20 @@ Engines are complicated. But the basics are easy.
 
 // user.f();
 // admin.f();
+
+
+
+/* CONSTRUCTOR
+
+* The regular {...} syntax allows us to create one object. But often we need to create many similar objects, like multiple users or menu items and so on.
+* That can be done using constructor functions and the "new" operator.
+
+*/
+// function User(name,age){
+//     this.name = name;
+//     this.age = age
+// }
+// let user1 = new User("Dhruv",21);
+// let user2 = new User("John",21);
+// console.log(user1);
+// console.log(user2);
