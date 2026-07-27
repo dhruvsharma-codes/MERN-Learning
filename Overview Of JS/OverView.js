@@ -1020,3 +1020,157 @@ Engines are complicated. But the basics are easy.
 // console.log(text.startsWith("Hello"));
 // let text2 = "Hello world, welcome to the universe.";
 // console.log(text2.endsWith("Hello"));
+
+
+
+/* ARRAY
+
+* an array is a collection of data.
+* array is an object type.
+
+*/
+// const cars = ["Saab", "Volvo", "BMW"];
+// console.log(cars);
+// console.log(cars.length);
+// console.log(typeof cars);
+// console.log(cars[0]);
+// console.log(cars[1]);
+
+// const names = ["dhruv","john","mahima"];
+// console.log(names);
+// names[1] = "bob";
+// console.log(names);
+
+// array to string
+// console.log(names.toString());
+
+// we can show array using json
+// console.log(JSON.stringify(names));
+
+// accessing last array
+// console.log(names[names.length - 1]);
+
+// accessing using for of loop
+// for(let arr of names){
+//     console.log(arr);
+// }
+
+// using for loop
+// for(let i = 0; i < names.length; i++){
+//     console.log(names[i]);
+// }
+
+// creating new empty array
+// let points = new Array();
+// let points1 = [];
+// console.log(points);
+// console.log(points1);
+
+/* difference with new and simple [] */
+
+// using new when we write vale it means 10 values should me written
+// let name = new Array(10);
+// console.log(name);
+// using simple 20 means only one value that is 20.
+// let name2 = [20];
+// console.log(name2);
+
+
+
+/* Array Methods */
+//length
+// let arr = [10,20,30,40,50];
+// console.log(arr.length);
+
+// tostring
+// let arr = [10,20,30,40,50];
+// console.log(arr.toString());
+
+// at
+// let arr = [10,20,30,40,50];
+// console.log(arr.at(4));
+
+// join
+// let arr1 = [10,20,30,40,50];
+// console.log(arr1.join("*"));
+
+// pop:- pop last element
+// let arr = [10,20,30,40,50];
+// console.log(arr.pop());
+
+// push
+// let arr = [10,20,30,40,50];
+// arr.push(60);
+// console.log(arr);
+
+// shift:- remove from start
+// let arr = [10,20,30,40,50];
+// console.log(arr.shift());
+
+// unshift
+// let arr = [10,20,30,40,50];
+// arr.unshift(60);
+// console.log(arr);
+
+// concat
+// let arr = [10,20,30,40,50];
+// let arr2 = [60,70,80,90];
+// console.log(arr.concat(arr2));
+
+//  flat
+// const myArr = [[1,2],[3,4],[5,6]];
+// console.log(myArr.flat());
+
+// splice
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2,0,"kiwi","lemon");
+// console.log(fruits);
+
+// slice
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1);
+// const citrus1 = fruits.slice(1,3);
+// console.log(citrus);
+// console.log(citrus1);
+
+// index of, lastindexof
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// let position = fruits.indexOf("Apple") 
+// console.log(position);
+// const fruits = ["Apple", "Orange", "Apple", "Mango"];
+// let position = fruits.lastIndexOf("Apple") 
+// console.log(position);
+
+// include
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.includes("Mango"));
+
+
+// find
+// let num = [10,20,30,40];
+// let value = num.find(num => num > 25);
+// console.log(value);
+
+// findindex
+// let nums = [10, 20, 30];
+// let index = nums.findIndex(num => num > 15);
+// console.log(index);
+
+// foreach
+// let arr = [10, 20, 30];
+// arr.forEach(item => {
+//     console.log(item);
+// });
+
+// filter
+// let arr = [10,20,30,40,50];
+// let filter = arr.filter(arr => arr >= 30);
+// console.log(filter);
+
+// sort
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.sort());
+
+// reverse
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.reverse());
