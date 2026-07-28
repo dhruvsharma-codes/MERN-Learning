@@ -1174,3 +1174,185 @@ Engines are complicated. But the basics are easy.
 // reverse
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // console.log(fruits.reverse());
+
+
+
+/* MATH
+
+* The JavaScript Math object allows you to perform mathematical tasks.
+
+
+*/
+/* Math Properties that should be constant */
+// euler number
+// console.log(Math.E);
+
+// pi
+// console.log(Math.PI);
+
+// square root of 2
+// console.log(Math.SQRT2);
+
+// square root of 1/2
+// console.log(Math.SQRT1_2);
+
+// natural logarithmic of 2
+// console.log(Math.LN2);
+
+// natural logrithmic of 10
+// console.log(Math.LN10);
+
+// base 2 logarithm of e and base 10 logarithm of e
+// console.log(Math.LOG2E);
+// console.log(Math.LOG10E);
+
+
+/* Math methods */
+// round:- gives round off value to nearest interfer like if pointer has 5 then one up value then below 5 down value
+// let x = 12.53;
+// console.log(Math.round(x));
+
+// ceil
+// let x = 12.13;
+// console.log(Math.ceil(x));
+
+// floor
+// let x = 12.67;
+// console.log(Math.floor(x));
+
+// trunc:- return integer part
+// let x = 13.33;
+// console.log(Math.trunc(x));
+
+// sign: if value is positive return 1, negative retun -1, zero 0
+// console.log(Math.sign(-4));
+// console.log(Math.sign(0));
+// console.log(Math.sign(4));
+
+// pow
+// console.log(Math.pow(8, 2));
+// console.log(Math.pow(5, 3));
+
+// sqrt
+// console.log(Math.sqrt(64));
+// console.log(Math.sqrt(100));
+
+// abs
+// console.log(Math.abs(-4.7));
+// console.log(Math.abs(-4.723223));
+
+// min and max
+// console.log(Math.min(0,20,32,22,223,-12,-654));
+// console.log(Math.max(0,20,32,22,223,-12,-654));
+
+// random
+// console.log(Math.random());
+
+
+
+/* MAP
+
+* A JavaScript Map is an object that can store collections of key-value pairs, similar to a dictionary in other programming languages.
+* Maps differ from standard objects in that keys can be of any data type.
+
+*/
+// const fruits = new Map();
+// set array 
+// fruits.set("Apple",300);
+// fruits.set("Banana",400);
+// fruits.set("Kiwi",500);
+// console.log(fruits);
+
+// get gives value
+// console.log(fruits.get("Apple"));
+// console.log(typeof fruits);
+
+
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+// console.log(fruits);
+
+// map.size
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+// console.log(fruits.size);
+
+// map.delete
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+// console.log(fruits.delete("apples"));
+// console.log(fruits);
+
+// map.clear
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+// console.log(fruits.clear());
+// console.log(fruits);
+
+// map.has
+// const fruits = new Map([
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
+// ]);
+// console.log(fruits.has("apples"));
+
+
+
+/* ERRORS
+
+* When executing JavaScript code, different errors can occur.
+
+*/
+/*reference errors*/
+
+// not defined foo
+// fname = foo;
+
+// cannot access y before initialization
+// let x = y;
+// let y = 5;
+
+
+/*Type error */
+
+// not a function
+// dhd(5);
+
+// num.uppercase is not a function
+// let num = 1;
+// console.log(num.toUpperCase());
+
+/*Range error */
+
+// invalid array len
+// new Array(-1);
+
+// argument between 1 -100
+// let num = 1.234;
+// console.log(num.toPrecision(500));
+
+
+/*Uri decode */
+// decodeURI("%%%");
+
+
+/*syntax error */
+
+// invalid or unexcepted token
+// let fname = "john);
+
+// missing argument
+// Math.round(4.6;
