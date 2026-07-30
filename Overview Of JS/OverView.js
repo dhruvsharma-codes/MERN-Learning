@@ -1359,4 +1359,169 @@ Engines are complicated. But the basics are easy.
 
 
 
+/* STATUS CODE
 
+* 200 - succcess
+* 400 - bad request
+* 401 - unauthorized
+* 403 - forbidden
+* 404 - not found
+* 500 - internal server error
+* 502 - bad gateway
+* 503 - service unavailable
+
+*/
+
+
+
+/* CALLBACK
+
+* A callback is a function passed as an argument to another function.
+
+*/
+// function greet(name, callback){
+//     callback("Hello" + name);
+// }
+
+// function display(message){
+//     document.getElementById("demo").innerHTML = message;
+// }
+
+// greet("dhruv",display);
+
+
+// function calculation(x,y,operation){
+//     return operation(x,y);
+// }
+// function add(a,b){
+//     return a+b;
+// }
+// let result = calculation(2,4,add);
+// document.getElementById("demo").innerHTML = result;
+
+
+
+
+/* PROMISES
+
+* A Promise is an object that represents the eventual completion (success) or failure (error) of an asynchronous operation and its resulting value.
+* Promise has three states:
+- Pending	The operation has started but has not finished.
+- Fulfilled	The operation completed successfully.
+- Rejected	The operation failed.
+
+*/
+// let promise = new Promise(function(resolve,reject){
+// let isSuccess = true;
+// if(isSuccess){
+//     resolve("Ok");
+//     console.log("Ok");
+// }
+// else{
+//     reject("Failure");
+//      console.log("failure");
+// }
+// })
+
+
+// success
+// let promise = new Promise(function(resolve,reject){
+// let isSuccess = true;
+// if(isSuccess){
+//     resolve("Ok");
+// }
+// else{
+//     reject("Failure");
+// }
+// });
+// promise.then(result=>{
+//     console.log(result);
+// })
+
+
+// failure
+// let promise = new Promise(function(resolve,reject){
+// let isSuccess = false;
+// if(isSuccess){
+//     resolve("Ok");
+// }
+// else{
+//     reject("Failure");
+// }
+// });
+// promise.catch(error=>{
+//     console.log(error);
+// })
+
+
+// both with shorthand
+// let promise = new Promise(function(resolve,reject){
+// let isSuccess = true;
+// if(isSuccess){
+//     resolve("success");
+// }
+// else{
+//     reject("Failure");
+// }
+// }).then(result=>console.log(result)).catch(error=>console.log(error));
+
+
+
+// finally
+// let promise = new Promise((resolve,reject)=>{
+// let order = true;
+// if(order){
+//     resolve("Order delivered");
+// }
+// else{
+//     reject("Not delivered");
+// }
+// }).then(result=>{
+//     console.log(result);
+// }).catch(error=>{
+//     console.log(error);
+// }).finally(()=>{
+//     console.log("Order Finished");
+// })
+
+
+// with settimeout
+// let promise = new Promise((resolve,reject)=>{
+//     let isAdmin = true;
+//     let user;
+
+//     function sum(a,b){
+//         console.log(a+b);
+//     }
+//     if(isAdmin || user){
+//         setTimeout(() => {
+//             resolve("Success")
+//             sum(12,2);
+//         }, 2000);
+//     }
+//     else{
+//         reject("Failure");
+//     }
+// }).then(result=>console.log(result)).catch(error=>console.log(error));
+
+
+
+// promise chaining
+// let promise = new Promise((resolve,reject)=>{
+//     resolve(10);
+// })
+// .then(value=>{
+//     console.log(value)
+//     return value * 2;        
+// })
+// .then(value=>{
+//     console.log(value)
+//     return value + 2;        
+// })
+// .then(value=>{
+//     console.log(value)
+//     return value - 2;        
+// })
+// .then(value => {
+//     console.log(value);
+// });
