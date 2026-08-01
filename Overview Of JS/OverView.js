@@ -6,6 +6,30 @@
 
 * JavaScript was initially created to “make web pages alive”. 
 * The programs in this language are called scripts.
+* Brendan Eich created JavaScript in 1955 in just 10 days while working at Netscape.
+* To ensure compatibility across browsers, JavaScript was submitted to Ecma International between 1996-1997.
+* ECMAScript 1 (ES1) released in 1997.
+* ES3 introduced in 1999 many core features still used today:
+- Regular expressions
+- Exception handling (try...catch)
+- Better string and array methods.
+* ES5 in 2009 added important improvements:
+- "use strict"
+- JSON.parse() and JSON.stringify()
+- Array methods like:
+ forEach()
+ map()
+ filter()
+ reduce()
+* ES6 was the biggest update in JavaScript's history.
+- let and const
+- Arrow functions (=>)
+- Classes
+- Modules (import/export)
+- Template literals
+- Promises
+- Destructuring
+- Default parameters
 * Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called "the JavaScript engine".
 
 */
@@ -30,7 +54,6 @@ Engines are complicated. But the basics are easy.
 * Supported by all major browsers and enabled by default.
 
  */
-
 
 
 // JS FUNDAMENTALS
@@ -1525,3 +1548,45 @@ Engines are complicated. But the basics are easy.
 // .then(value => {
 //     console.log(value);
 // });
+
+
+
+/* ASYNC AWAIT
+
+* async and await are keywords introduced in ES2017 (ES8) that make working with asynchronous code easier and more readable. They are built on top of Promises.
+
+*/
+// without await line by line
+// console.log("hello");
+// const getData = async()=>{
+//      console.log("resolved");
+// }
+// getData();
+// console.log("finished");
+
+// with await
+// console.log("hello");
+// const getData = async()=>{
+//     let result = await (12 + 12);
+//     console.log(result);
+//      console.log("resolved");
+// }
+// getData(); 
+// console.log("finished");
+
+
+// console.log("started");
+// async function getData(){
+//     try{
+//         let response = await fetch("https://api.frankfurter.dev/v2/rates");
+//         let data = await response.json();
+//         console.log(data);
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+// }
+// getData();
+// console.log("pending..");
+
+
