@@ -1423,6 +1423,18 @@ Engines are complicated. But the basics are easy.
 // document.getElementById("demo").innerHTML = result;
 
 
+// function calculation(a,b,operation){
+//     return operation(a,b);
+// }
+
+// function mult(a,b){
+//     return a * b;
+// }
+
+// let result = calculation(12,10,mult);
+// document.getElementById("demo").innerHTML = result;
+
+
 
 
 /* PROMISES
