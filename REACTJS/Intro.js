@@ -47,5 +47,4 @@ Instead of changing the real DOM immediately, React:
 - Compares it with the previous Virtual DOM (a process called diffing).
 - Finds what changed.
 - Updates only those specific parts of the real DOM.
-
 */
