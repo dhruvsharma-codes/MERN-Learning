@@ -38,7 +38,7 @@
 
 
 
-/* VIRTUAL DOM
+/* VIRTUAL DOM (DOM).....
 
 * The Virtual DOM is a lightweight JavaScript object that represents the UI.
 Instead of changing the real DOM immediately, React:
