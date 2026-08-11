@@ -1,6 +1,13 @@
+import { useRef } from "react";
 import { useState } from "react";
 
 const Form = () => {
+  const abc = useRef();
+
+  const handleClick = () =>{
+abc.current.style.backgroundColor = "red";
+  }
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -71,6 +78,7 @@ const Form = () => {
           <button type="submit">Login</button>
         </form>
       </div>
+      <button onClick={handleClick} ref={abc}>click</button>
     </div>
   );
 };
