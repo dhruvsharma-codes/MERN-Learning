@@ -1,10 +1,14 @@
 const express = require("express");
 const sequelize = require("./config/database");
 const User = require("./models/User");
+const userRouter = require("./routes/userRoutes");
+
 
 const app = express();
 
 app.use(express.json());
+
+app.use("/", userRouter);
 
 const PORT = 5000;
 
