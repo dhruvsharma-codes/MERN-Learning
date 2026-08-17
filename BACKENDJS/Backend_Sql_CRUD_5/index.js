@@ -26,5 +26,4 @@ const startServer = async () => {
     console.log("Database Connection Failed", error);
   }
 };
-
 startServer();
