@@ -23,7 +23,7 @@ const User = sequelize.define("User", {
     type: DataTypes.INTEGER,
     allowNull: true,
   },
-  
+
   companyId: {
     type: DataTypes.INTEGER,
     allowNull: false,
