@@ -6,17 +6,24 @@ const PORT = process.env.PORT;
 
 const sequelize = require("./config/database.js");
 
-const { User, Company } = require("./models/index.js");
+const { User, Company, CompanyProfile } = require("./models/index.js");
 
 app.use(express.json());
 
 app.get("/api/getcompanies", async (req, res) => {
   try {
     const companies = await Company.findAll({
-      include: {
+      include: 
+      [
+        {
         model: User,
         as: "users",
       },
+      {
+        model:CompanyProfile,
+        as:"profile"
+      }
+    ]
     });
     res.status(200).json({
       message: "Users fetched successfully",

@@ -1,5 +1,6 @@
 const User = require("./userModel.js");
 const Company = require("./companyModel.js");
+const CompanyProfile = require("./companyProfile.js");
 
 // hasMany
 Company.hasMany(User,{
@@ -7,4 +8,9 @@ Company.hasMany(User,{
     as:"users"
 });
 
-module.exports = { User, Company };
+Company.hasOne(CompanyProfile,{
+    foreignKey:"companyId",
+    as:"profile"
+});
+
+module.exports = { User, Company, CompanyProfile };
