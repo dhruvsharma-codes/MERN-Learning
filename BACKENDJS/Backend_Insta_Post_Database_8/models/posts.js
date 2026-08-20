@@ -13,17 +13,31 @@ module.exports = (Sequelize, DataTypes) => {
       allowNull: false,
     },
     imageUrl: {
-      type: DataTypes.String,
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     videoUrl: {
-      type: DataTypes.String,
-      allowNull,
+      type: DataTypes.STRING(100),
+      allowNull: false,
     },
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: "Users",
+        key: "id",
+      },
     },
   });
+  Posts.associate = (models) => {
+    Posts.belongsTo(models.Users, {
+      foreignKey: "userId",
+      as: "users",
+    });
+    Posts.hasMany(models.Comments, {
+      foreignKey: "postId",
+      as: "comments",
+    });
+  };
   return Posts;
 };

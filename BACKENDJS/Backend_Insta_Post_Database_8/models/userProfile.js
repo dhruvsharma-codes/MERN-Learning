@@ -9,7 +9,7 @@ module.exports = (Sequelize, DataTypes) => {
       autoIncrement: true,
     },
     fullName: {
-      type: DataTypes.String(200),
+      type: DataTypes.STRING(200),
       allowNull: false,
     },
     bio: {
@@ -17,15 +17,11 @@ module.exports = (Sequelize, DataTypes) => {
       allowNull: false,
     },
     profileImage: {
-      type: DataTypes.String,
-      allowNull: false,
-    },
-    website: {
-      type: DataTypes.String(100),
+      type: DataTypes.STRING(100),
       allowNull: false,
     },
     gender: {
-      type: DataTypes.String(10),
+      type: DataTypes.STRING(10),
       allowNull: false,
     },
     dateOfBirth: {
@@ -35,7 +31,18 @@ module.exports = (Sequelize, DataTypes) => {
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      unique:true,
+      references: {
+        model: "Users",
+        key: "id",
+      },
     },
   });
+  userProfile.associate = (models) => {
+    userProfile.belongsTo(models.Users, {
+      foreignKey: "userId",
+      as: "users",
+    });
+  };
   return userProfile;
 };
