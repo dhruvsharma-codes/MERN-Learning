@@ -14,7 +14,7 @@ app.use("/api",authRoutes);
 
 const PORT = process.env.PORT;
 
-const startServer = async (req, res) => {
+const startServer = async () => {
     try {
         await sequelize.authenticate();
         console.log("Database connected successfully");
