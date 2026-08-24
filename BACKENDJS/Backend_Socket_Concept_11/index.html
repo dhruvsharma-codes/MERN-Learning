@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket Test</title>
+  </head>
+
+  <body>
+    <h1>Socket Test</h1>
+
+    <input id="message" placeholder="Enter message" />
+
+    <button onclick="sendMessage()">Send</button>
+
+    <div id="messages"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+      const socket = io();
+
+      socket.on("connect", () => {
+        console.log("Connected!");
+        console.log("Socket ID:", socket.id);
+      });
+
+      socket.on("message", (data) => {
+        console.log("Received:", data);
+
+        document.getElementById("messages").innerHTML += `<p>${data.text}</p>`;
+      });
+
+      function sendMessage() {
+        const message = document.getElementById("message").value;
+
+        socket.emit("message", {
+          text: message,
+        });
+      }
+    </script>
+  </body>
+</html>
