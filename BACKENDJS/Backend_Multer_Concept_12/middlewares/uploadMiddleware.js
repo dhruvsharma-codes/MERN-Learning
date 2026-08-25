@@ -8,6 +8,7 @@ if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
 
+
 // storage configuration
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -18,6 +19,7 @@ const storage = multer.diskStorage({
     cb(null, uniqueName);
   },
 });
+
 
 // file validation
 const allowedMimeTypes = ["image/png", "image/jpg", "image/webp", "image/jpeg"];
@@ -37,6 +39,7 @@ const fileFilter = (req, file, cb) => {
   cb(null, true);
 };
 
+
 // multer configuration
 const upload = multer({
   storage,
@@ -46,6 +49,7 @@ const upload = multer({
     files: 5,
   },
 });
+
 
 // error handling middleware
 const uploadErrorHandler = (err, req, res, next) => {
@@ -66,12 +70,6 @@ const uploadErrorHandler = (err, req, res, next) => {
       return res.status(400).json({
         success: false,
         message: "Unexpected file field",
-      });
-    }
-    if (err.code === "LIMIT_FILE_COUNT") {
-      return res.status(400).json({
-        success: false,
-        message: "You can upload maximum 5 images.",
       });
     }
     return res.status(400).json({
