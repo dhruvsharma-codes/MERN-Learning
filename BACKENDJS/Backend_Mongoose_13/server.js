@@ -3,13 +3,15 @@ require("dotenv").config();
 const connectDb = require("./config/db.js");
 const router = require("./routes/userRoutes.js");
 const postRouter = require("./routes/postRoutes.js");
+const profileRouter = require("./routes/profileroutes.js");
 const app = express();
-app.use(express.json());
+app.use(express.json()); 
 connectDb();
 const PORT = process.env.PORT
 
 app.use("/api",router);
 app.use("/api",postRouter);
+app.use("/api",profileRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
