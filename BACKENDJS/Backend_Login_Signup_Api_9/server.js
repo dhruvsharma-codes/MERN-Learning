@@ -7,6 +7,15 @@ const PORT = process.env.PORT;
 
 
 app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
+app.use("/api",router);
 
 
 app.listen(PORT, () => {
