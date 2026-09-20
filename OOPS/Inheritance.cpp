@@ -7,27 +7,31 @@ eg; Animal Class
 #include <iostream>
 using namespace std;
 
-class Animal {
-    public:
-
-    void eat(){
+class Animal
+{
+public:
+    void eat()
+    {
         cout << "Animal is eating." << endl;
     }
 
-    void sleep(){
+    void sleep()
+    {
         cout << "Animal is sleeping." << endl;
     }
 };
 
-class Dog : public Animal {
-    public:
-
-    void bark(){
+class Dog : public Animal
+{
+public:
+    void bark()
+    {
         cout << "Dog is barking." << endl;
     }
 };
 
-int main(){
+int main()
+{
     Dog d;
     d.eat();
     d.sleep();
