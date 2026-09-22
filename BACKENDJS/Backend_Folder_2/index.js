@@ -8,6 +8,13 @@ const PORT = process.env.PORT;
 console.log(PORT);
 
 app.use("/",userRoutes);
+app.use("/",userRoutes);
+app.use("/",userRoutes);
+app.use("/",userRoutes);
+app.use("/",userRoutes);
+app.use("/",userRoutes);
+app.use("/",userRoutes);
+
 
 app.listen(PORT,()=>{
     console.log(`Server is Running on Port ${process.env.PORT}`);
