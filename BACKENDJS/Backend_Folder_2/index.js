@@ -11,7 +11,6 @@ app.use("/",userRoutes);
 app.use("/",userRoutes);
 app.use("/",userRoutes);
 app.use("/",userRoutes);
-app.use("/",userRoutes);
 
 
 app.listen(PORT,()=>{
