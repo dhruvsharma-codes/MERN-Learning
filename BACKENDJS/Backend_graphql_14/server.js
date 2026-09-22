@@ -32,19 +32,13 @@ const startServer = async () => {
     await apolloServer.start();
 
     // GraphQL endpoint
-    app.use(
-      "/graphql",
-      express.json(),
-      expressMiddleware(apolloServer)
-    );
+    app.use("/graphql", express.json(), expressMiddleware(apolloServer));
 
     const PORT = process.env.PORT || 5000;
 
     app.listen(PORT, () => {
       console.log(`Server running on PORT ${PORT}`);
-      console.log(
-        `GraphQL: http://localhost:${PORT}/graphql`
-      );
+      console.log(`GraphQL: http://localhost:${PORT}/graphql`);
     });
   } catch (error) {
     console.error("Server failed:", error);
