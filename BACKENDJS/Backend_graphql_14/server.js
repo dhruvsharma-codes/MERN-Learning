@@ -18,7 +18,6 @@ app.use(cors());
 app.use(cors());
 app.use(cors());
 app.use(cors());
-app.use(cors());
 
 const startServer = async () => {
   try {
