@@ -13,7 +13,6 @@ app.use("/api", router);
 app.use("/api", router);
 app.use("/api", router);
 app.use("/api", router);
-app.use("/api", router);
 
 const startServer = async () => {
   try {
