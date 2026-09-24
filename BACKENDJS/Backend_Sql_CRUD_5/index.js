@@ -9,7 +9,6 @@ app.use(express.json());
 const PORT = process.env.PORT;
 
 app.use("/api", router);
-app.use("/api", router);
 
 const startServer = async () => {
   try {
