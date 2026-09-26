@@ -12,7 +12,7 @@ class Payment
 {
 
 public:
-    virtual void pay() = 0; // Pure virtual function: declared in base class thathas no implementation and ovveride by the derived class
+    virtual void pay() = 0; // Pure virtual function: declared in base class thatnhas no implementation and ovveride by the derived class
 };
 
 class CreditCardPayment : public Payment

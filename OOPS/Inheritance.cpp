@@ -107,40 +107,40 @@ eg; Animal Class
 // }
 
 // Multiple Inheritance
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-class Father
-{
-public:
-    void fatherProprty()
-    {
-        cout << "Father Property" << endl;
-    }
-};
-class Mother
-{
-public:
-    void motherProprty()
-    {
-        cout << "Mother Property" << endl;
-    }
-};
+// class Father
+// {
+// public:
+//     void fatherProprty()
+//     {
+//         cout << "Father Property" << endl;
+//     }
+// };
+// class Mother
+// {
+// public:
+//     void motherProprty()
+//     {
+//         cout << "Mother Property" << endl;
+//     }
+// };
 
-class Child : public Father, public Mother
-{
-public:
-    void childProperty()
-    {
-        cout << "Child Property" << endl;
-    }
-};
+// class Child : public Father, public Mother
+// {
+// public:
+//     void childProperty()
+//     {
+//         cout << "Child Property" << endl;
+//     }
+// };
 
-int main()
-{
-    Child c;
-    c.fatherProprty();
-    c.motherProprty();
-    c.childProperty();
-    return 0;
-}
+// int main()
+// {
+//     Child c;
+//     c.fatherProprty();
+//     c.motherProprty();
+//     c.childProperty();
+//     return 0;
+// }

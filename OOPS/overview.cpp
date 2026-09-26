@@ -12,5 +12,5 @@ properties:-
 methods:-
 * study()
 * attendClass()
-* giveExan()
+* giveExam()
 */

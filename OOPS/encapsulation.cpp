@@ -15,7 +15,7 @@ private:
 public:
     void setBalance(double amount)
     {
-        if (amount >= 0)
+        if (amount > 0)
         {
             balance = amount;
         }
