@@ -28,8 +28,8 @@ Polymorphism means many form. polymorphism means one interface can have many for
 //     return 0;
 // }
 
-// function overriding
 
+// function overriding
 #include <iostream>
 using namespace std;
 
