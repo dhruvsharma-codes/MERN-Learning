@@ -231,3 +231,174 @@
 //     cout << "Reverse" << reverse;
 //     return 0;
 // }
+
+// PALINDROME NUMBER
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     int original = n;
+//     int reverse = 0;
+
+//     while (n != 0)
+//     {
+//         int digit = n % 10;
+//         reverse = reverse * 10 + digit;
+//         n /= 10;
+//     }
+//     if (original == reverse)
+//     {
+//         cout << "palindrome";
+//     }
+
+//     else
+//     {
+//         cout << "Not Palindrome";
+//     }
+// }
+
+// PRIME NUMBER
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     bool isPrime = true;
+
+//     if (n <= 1)
+//     {
+//         isPrime = false;
+//     }
+
+//     for (int i = 2; i * i <= n; i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+
+//     if (isPrime)
+//         cout << "Prime";
+//     else
+//         cout << "Not Prime";
+
+//     return 0;
+// }
+
+// FIBONACCI SERIES
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     int a = 0;
+//     int b = 1;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         cout << a << " ";
+//         int next = a + b;
+//         a = b;
+//         b = next;
+//     }
+//     return 0;
+// }
+
+// ARMSTRONG NUMBER
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     int original = n;
+//     int sum = 0;
+
+//     while (n != 0)
+//     {
+//         int digit = n % 10;
+//         sum += digit * digit * digit;
+//         n /= 10;
+//     }
+
+//     if (sum == original)
+//     {
+//         cout << "Armstrong";
+//     }
+//     else
+//     {
+//         cout << "Not Armstrong";
+//     }
+// }
+
+// STAR PATTERN
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter number";
+//     cin >> n;
+
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// REVERSE STAR PATTERN
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter Number:";
+//     cin >> n;
+
+//     for (int i = 5; i >= 1; i--)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// NUMBER PATTERN
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout << "Ente number: ";
+//     cin >> n;
+
+//     for(int i = 1; i <= n; i++){
+//         for (int j = 1; j <= i; j++){
+//             cout << j;
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
