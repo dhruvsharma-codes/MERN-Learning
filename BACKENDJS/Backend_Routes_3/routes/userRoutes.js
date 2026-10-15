@@ -16,7 +16,6 @@ router.get("/user/test", userMiddleware, getUser);
 router.get("/user/test", userMiddleware, getUser);
 router.get("/user/test", userMiddleware, getUser);
 router.get("/user/test", userMiddleware, getUser);
-router.get("/user/test", userMiddleware, getUser);
 
 
 
