@@ -11,7 +11,6 @@ router.get("/user/test", userMiddleware, getUser);
 router.get("/user/test", userMiddleware, getUser);
 router.get("/user/test", userMiddleware, getUser);
 router.get("/user/test", userMiddleware, getUser);
-router.get("/user/test", userMiddleware, getUser);
 
 
 module.exports = router;
