@@ -31,7 +31,6 @@ app.use("/api",profileRouter);
 app.use("/api",profileRouter);
 app.use("/api",profileRouter);
 app.use("/api",profileRouter);
-app.use("/api",profileRouter);
 
 
 
