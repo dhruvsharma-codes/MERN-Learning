@@ -14,7 +14,6 @@ app.use("/api",postRouter);
 app.use("/api",profileRouter);
 app.use("/api",profileRouter);
 app.use("/api",profileRouter);
-app.use("/api",profileRouter);
 
 
 
