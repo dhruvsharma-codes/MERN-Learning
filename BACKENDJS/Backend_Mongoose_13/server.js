@@ -12,7 +12,6 @@ const PORT = process.env.PORT
 app.use("/api",router);
 app.use("/api",postRouter);
 app.use("/api",postRouter);
-app.use("/api",postRouter);
 
 
 
