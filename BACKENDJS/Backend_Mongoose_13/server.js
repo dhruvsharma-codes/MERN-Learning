@@ -15,7 +15,6 @@ app.use("/api",postRouter);
 app.use("/api",postRouter);
 app.use("/api",postRouter);
 app.use("/api",postRouter);
-app.use("/api",postRouter);
 
 
 app.listen(PORT, () => {
